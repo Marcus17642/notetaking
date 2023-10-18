@@ -1,0 +1,86 @@
+body {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 600px;
+}
+
+.container {
+    display: flex;
+    background-color: grey;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+}
+
+.container h1 {
+    color:black ;
+    display: flex;
+    justify-content: center;
+    width: 600px;
+
+}
+
+
+
+.box {
+    border: 1px solid black;
+    color: purple;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 12px;
+    /* how to make column and row gap?*/
+
+
+}
+
+
+
+.indented {
+    margin-left: 50px;
+}
+
+#taskinput {
+    height: 200px;
+    width: 400px;
+    word-wrap: break-word;
+    display: flex;
+    justify-content: start;
+}
+
+.save {
+    color:white;
+    border: 1px solid green;
+    padding: 1px;
+    background-color: green;
+    margin-left:auto;
+    margin-right:auto;
+    width:80px;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+
+    body {
+        display:flex;
+        width: 900px;
+
+    }
+    .container{
+        flex-direction: column;
+        align-content: center;
+        width: 500px;
+        align-items: center;
+        justify-content: start;
+        margin-right: 20px;
+
+
+    }
+    .container h1{
+        width:50px;
+    }
+}
